@@ -56,6 +56,8 @@ p {
         max-height: 100%;
     }
     body {
+        background: rgb(8,49,59);
         background-repeat: repeat;
+        background-attachment: scroll;
     }
   }
