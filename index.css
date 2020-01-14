@@ -53,8 +53,8 @@ p {
 
 @media only screen and (max-width: 600px) {
     img {
-        height: 100%;
-        width: auto;
+        width: 100%;
+        height: auto;
     }
     body {
         background: rgb(8,49,59);
