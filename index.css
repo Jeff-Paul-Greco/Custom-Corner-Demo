@@ -54,6 +54,7 @@ p {
 @media only screen and (max-width: 600px) {
     img {
         object-fit: contain;
+        max-width: 50%;
     }
     body {
         background: rgb(8,49,59);
