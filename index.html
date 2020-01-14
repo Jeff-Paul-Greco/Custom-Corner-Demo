@@ -28,181 +28,181 @@
             <img src="./assets/images/screenshot.PNG">
 
             <h1 class="tech">Technologies Used</h1>
+
+
+            <div class="row">
+                <div class="col-md-8">
+                    <h3>React</h3>
+                    <ul>
+                        <li>Bootstrap-React</li>
+                        <li>React-Toastify</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>Node</h3>
+                    <ul>
+                        <li>JSON Web Token</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-8">
+                    <h3>Mongo</h3>
+                    <ul>
+                        <li>node - Mongoose, Mongoose-bcrypt</li>
+                        <li>python - pymongo</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>Scraping</h3>
+                    <ul>
+                        <li>NodeJS - Axios, Cheerio, Puppeteer</li>
+                        <li>python - requests, BeatifulSoup (bs4)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3>Design</h3>
+                    <ul>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1>Infrastructure</h1>
+                    <p>Custom Corner is hosted on Google Cloud Platform, and is currently utilizing Docker
+                        to run the web application. There are 4 containers running on the server:
+                    </p>
+                    <ul>
+                        <li>Mongo (Houses the database of the application.)</li>
+                        <li>NGINX (Performs reverse proxy, and handles SSL. It also redirects traditional http
+                            connections
+                            to https)</li>
+                        <li>Certbot (Automates keeping SSL Cert with LetsEncrypt Valid.)</li>
+                        <li>Node (Runs the react-app.)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Signing In</h1>
+                </div>
+                <div class="col-md-12">
+                    <p>Upon reaching the Custom Corner landing page, the user will see a login button at
+                        the bottom of the screen. Clicking this button brings up a modal where the user
+                        can enter their login credentials and access the site. Without valid account
+                        authentication the user will be unable to access anything other than the
+                        landing/about page.
+                    </p>
+                </div>
+                <img src="./assets/images/sign-in.gif">
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Creating and Selecting Clients</h1>
+                </div>
+                <div class="col-md-12">
+                    <p>By selecting clients from the dropdown menu, the user will be brought to a client
+                        create/delete page where new clients can be added and deleted. Deleting a client
+                        also deletes all saved items associated with said client from the database.
+                    </p>
+                </div>
+                <img src="./assets/images/client.gif">
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Data Collected</h1>
+                </div>
+                <div class="col-md-12">
+                    <p>Each item scraped into our database includes the item's vendor, description, SKU,
+                        url to the vendor's page for that item, and a url to a printable tearsheet for that
+                        item.
+                    </p>
+                </div>
+                <img src="./assets/images/data.gif">
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Filtering Results</h1>
+                </div>
+                <div class="col-md-12">
+                    <p>This app scrapes data from 7 different furniture vendors' websites daily. If the user
+                        wishes to filter a particular type of furniture by vendor they can do so via the
+                        filters present on the lefthand side of the screen. The furniture categories in the
+                        navbar and the vendor filter are built dynamically based on the information saved
+                        to our database each scrape.
+                    </p>
+                </div>
+                <img src="./assets/images/filter.gif">
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Saving to a Client's Tackboard</h1>
+                </div>
+                <div class="col-md-12">
+                    <p>Once a client has been created and selected on the navbar, new furniture
+                        entries can be saved to their tackboard. Clicking the thumb tack icon on the top
+                        right of a search result saves it to the selected client's tackboard. Once an item
+                        has been saved, clicking the same thumb tack icon on a tackboard entry will
+                        remove the item from the associated client's tack board.
+                    </p>
+                </div>
+                <img src="./assets/images/tackboard.gif">
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Pinterest Integration</h1>
+                </div>
+                <div class="col-md-12">
+                    <p>Once the user has saved some items to a client's tackboard, those items can be saved
+                        to a Pinterest board of their choice. Clicking the red save button at the top right of
+                        the tackboard will call a popup that allows the user to select an item from the
+                        tackboard and save it to a Pinterest board. The Pinterest entry saved will link
+                        to the original vendor's url for that item. If the user is not currently logged in
+                        to a pinterest account they will be prompted to sign in or create an account first.
+
+                    </p>
+                </div>
+                <img src="./assets/images/pinterest.gif">
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="credits">Custom Corner Development Team:</h1>
+                    <ul>
+                        <a href="https://www.linkedin.com/in/sdaniels6363/">
+                            <li class="names">Scott Daniels</li>
+                        </a>
+                        <a href="https://www.linkedin.com/in/gregory-desmarais-96b70a55/">
+                            <li class="names">Greg Desmarais</li class="names">
+                        </a>
+                        <a href="https://www.linkedin.com/in/jarkko-haarla-34906215/">
+                            <li class="names">Jarkko Haarla</li class="names">
+                        </a>
+                        <a href="https://www.linkedin.com/in/jeff-greco-019a28189/">
+                            <li class="names">Jeff Greco</li class="names">
+                        </a>
+                        <a href="https://www.linkedin.com/in/bradley-cordle-506/">
+                            <li class="names">Bradley Cordle</li class="names">
+                        </a>
+                        <a href="https://www.linkedin.com/in/toney-higgins-123a26a2/">
+                            <li class="names">Toney Higgins</li class="names">
+                        </a>
+                    </ul>
+                </div>
+            </div>
         </div>
-
-        <div class="row">
-            <div class="col-md-8">
-                <h3>React</h3>
-                <ul>
-                    <li>Bootstrap-React</li>
-                    <li>React-Toastify</li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <h3>Node</h3>
-                <ul>
-                    <li>JSON Web Token</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-8">
-                <h3>Mongo</h3>
-                <ul>
-                    <li>node - Mongoose, Mongoose-bcrypt</li>
-                    <li>python - pymongo</li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <h3>Scraping</h3>
-                <ul>
-                    <li>NodeJS - Axios, Cheerio, Puppeteer</li>
-                    <li>python - requests, BeatifulSoup (bs4)</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h3>Design</h3>
-                <ul>
-                    <li>Figma</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h1>Infrastructure</h1>
-                <p>Custom Corner is hosted on Google Cloud Platform, and is currently utilizing Docker
-                    to run the web application. There are 4 containers running on the server:
-                </p>
-                <ul>
-                    <li>Mongo (Houses the database of the application.)</li>
-                    <li>NGINX (Performs reverse proxy, and handles SSL. It also redirects traditional http connections
-                        to https)</li>
-                    <li>Certbot (Automates keeping SSL Cert with LetsEncrypt Valid.)</li>
-                    <li>Node (Runs the react-app.)</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Signing In</h1>
-            </div>
-            <div class="col-md-12">
-                <p>Upon reaching the Custom Corner landing page, the user will see a login button at
-                    the bottom of the screen. Clicking this button brings up a modal where the user
-                    can enter their login credentials and access the site. Without valid account
-                    authentication the user will be unable to access anything other than the
-                    landing/about page.
-                </p>
-            </div>
-            <img src="./assets/images/sign-in.gif">
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Creating and Selecting Clients</h1>
-            </div>
-            <div class="col-md-12">
-                <p>By selecting clients from the dropdown menu, the user will be brought to a client
-                    create/delete page where new clients can be added and deleted. Deleting a client
-                    also deletes all saved items associated with said client from the database.
-                </p>
-            </div>
-            <img src="./assets/images/client.gif">
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Data Collected</h1>
-            </div>
-            <div class="col-md-12">
-                <p>Each item scraped into our database includes the item's vendor, description, SKU,
-                    url to the vendor's page for that item, and a url to a printable tearsheet for that
-                    item.
-                </p>
-            </div>
-            <img src="./assets/images/data.gif">
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Filtering Results</h1>
-            </div>
-            <div class="col-md-12">
-                <p>This app scrapes data from 7 different furniture vendors' websites daily. If the user
-                    wishes to filter a particular type of furniture by vendor they can do so via the
-                    filters present on the lefthand side of the screen. The furniture categories in the
-                    navbar and the vendor filter are built dynamically based on the information saved
-                    to our database each scrape.
-                </p>
-            </div>
-            <img src="./assets/images/filter.gif">
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Saving to a Client's Tackboard</h1>
-            </div>
-            <div class="col-md-12">
-                <p>Once a client has been created and selected on the navbar, new furniture
-                    entries can be saved to their tackboard. Clicking the thumb tack icon on the top
-                    right of a search result saves it to the selected client's tackboard. Once an item
-                    has been saved, clicking the same thumb tack icon on a tackboard entry will
-                    remove the item from the associated client's tack board.
-                </p>
-            </div>
-            <img src="./assets/images/tackboard.gif">
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Pinterest Integration</h1>
-            </div>
-            <div class="col-md-12">
-                <p>Once the user has saved some items to a client's tackboard, those items can be saved
-                    to a Pinterest board of their choice. Clicking the red save button at the top right of
-                    the tackboard will call a popup that allows the user to select an item from the
-                    tackboard and save it to a Pinterest board. The Pinterest entry saved will link
-                    to the original vendor's url for that item. If the user is not currently logged in
-                    to a pinterest account they will be prompted to sign in or create an account first.
-
-                </p>
-            </div>
-            <img src="./assets/images/pinterest.gif">
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <h1 class="credits">Custom Corner Development Team:</h1>
-                <ul>
-                    <a href="https://www.linkedin.com/in/sdaniels6363/">
-                        <li class="names">Scott Daniels</li>
-                    </a>
-                    <a href="https://www.linkedin.com/in/gregory-desmarais-96b70a55/">
-                        <li class="names">Greg Desmarais</li class="names">
-                    </a>
-                    <a href="https://www.linkedin.com/in/jarkko-haarla-34906215/">
-                        <li class="names">Jarkko Haarla</li class="names">
-                    </a>
-                    <a href="https://www.linkedin.com/in/jeff-greco-019a28189/">
-                        <li class="names">Jeff Greco</li class="names">
-                    </a>
-                    <a href="https://www.linkedin.com/in/bradley-cordle-506/">
-                        <li class="names">Bradley Cordle</li class="names">
-                    </a>
-                    <a href="https://www.linkedin.com/in/toney-higgins-123a26a2/">
-                        <li class="names">Toney Higgins</li class="names">
-                    </a>
-                </ul>
-            </div>
-        </div>
-    </div>
-
     </div>
 </body>
 
