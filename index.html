@@ -71,6 +71,23 @@
                 </ul>
             </div>
         </div>
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Infrastructure</h1>
+                <p>Custom Corner is hosted on Google Cloud Platform, and is currently utilizing Docker
+                    to run the web application. There are 4 containers running on the server:
+                </p>
+                <ul>
+                    <li>Mongo (Houses the database of the application.)</li>
+                    <li>NGINX (Performs reverse proxy, and handles SSL. It also redirects traditional http connections
+                        to https)</li>
+                    <li>Certbot (Automates keeping SSL Cert with LetsEncrypt Valid.)</li>
+                    <li>Node (Runs the react-app.)</li>
+                </ul>
+            </div>
+        </div>
+
         <div class="row">
             <div class="col-md-12">
                 <h1>Signing In</h1>
