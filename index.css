@@ -50,3 +50,12 @@ p {
 .credits {
     margin-top: 3rem;
 }
+
+@media only screen and (max-width: 600px) {
+    img {
+        max-height: 100%;
+    }
+    body {
+        background-repeat: repeat;
+    }
+  }
